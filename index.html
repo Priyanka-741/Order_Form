@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        
+.container{
+    background: #f2fdc9;
+    height: auto;
+    width: auto;
+}
+
+table{
+    table-layout: auto;
+    border-radius: 20px;
+}
+
+th,h3{
+    text-align: center;
+    background-color: rgb(139, 245, 112);
+    padding: 2px;
+    margin-top: 5px;
+    height: 20px;
+}
+
+table, th, td {
+    border: 1px solid #b1f3b6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="checkbox"], select {
+    padding: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+    <form>
+        <table>
+          <th><h3>Contact Details</h3></th>
+            <tr>
+                <td><label>name: </label></td>
+                <td><input type="text" ></td>
+            </tr>
+
+            <tr>
+                <td><label>Address: </label></td>
+                <td><input type="text"></td>
+            </tr>
+
+             <tr>
+                <td><label>Mobile Number: </label></td>
+                <td><input type="number" ></td>
+            </tr>
+
+            <tr>
+                <td><label>Email ID: </label></td>
+                <td><input type="email"></td>
+            </tr>
+        </table>
+
+        <table>
+          <th><h3>Product Details</h3></th>
+            <tr>
+                <td><label>Price: </label></td>
+                <td><input type="number" name="Enter Price"></td>
+            </tr>
+
+            <tr>
+                <td><label>Products: </label></td>
+                <td>
+                    <input type="checkbox" name="ch[]">TV
+                    <input type="checkbox" name="ch[]">Radio
+                    <input type="checkbox" name="ch[]">Mobile
+                    <input type="checkbox" name="ch[]">Speakers
+                </td>
+            </tr>
+
+             <tr>
+                <td><label>Product Number: </label></td>
+                <td><input type="number" name="Enter Product number"></td>
+            </tr>
+
+            <tr>
+                <td><label>Product Quantity: </label></td>
+                <td><input type="number" name="Enter Product number"></td>
+            </tr>
+        </table>
+   
+        <table>
+          <th><h3>Payment Method</h3></th>
+            <tr>
+               <td>Credit Card Type:</td>
+               <td>
+                <select name="card_type">
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="American Express">American Express</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Card Number: </label></td>
+                <td><input type="text" name="Enter Card Number"></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Expiry Date: </label></td>
+                <td><input type="date" name="Enter exp date"></td>
+            </tr>
+        </table>
+    
+        <table>
+          <th><h3>Billing and Delivary Adress: </h3></th>
+            <tr>
+            <td><label>Delivary Address: </label></td>
+            <td>
+                <textarea name="Enter Address"></textarea>
+            </td>
+           </tr>
+        </table>
+        <button type="submit">Submit Order</button>
+    </form>
+  </div>
+</body>
+</html>
